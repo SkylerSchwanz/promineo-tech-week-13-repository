@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+html,
+body,
+#root {
+  /*background-color: whitesmoke;*/
+  background: linear-gradient(45deg, #d1d3ea, #abc1e5, #d1d2ea, #91bad7, #74aed7);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  10% {
+    background-position: 0 50%;
+  }
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#Logo {
+  font-size: 60px;
+  font-family: 'Dosis', sans-serif;
+  cursor: default;
+}
+
+#LoginForm {
+  /*background-color: aliceblue;*/
+  background-color: rgba(240, 248, 255, 0.45);
+  height: fit-content;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 13vw;
+
+  min-width: 200px;
+  min-height: 250px;
+
+  padding: 15px;
+
+  border: solid 3px lightsteelblue;
+  /*border: 2px solid black;*/
+  border-radius: 10px;
+}
+
+#LoginForm a {
+  color: lightseagreen;
+  text-decoration: none;
+  transition: all;
+}
+
+#LoginForm a:hover {
+  text-decoration: underline;
+}
+
+#LoginForm h3 {
+  padding: 10px;
+  font-size: /*3vh*/ stretch;
+}
+
+#LoginForm button {
+  border: none;
+  background-color: lightsteelblue;
+  border-radius: 5px;
+}
+
+#LoginForm input {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: solid 2px gray;
+  /*background-color: snow;*/
+}
+
+#LoginForm input,
+#LoginForm button {
+  width: stretch;
+  height: 4vh;
+
+  margin: 1vh 0;
+}
+
+#LoginForm input {
+  background: transparent;
+}
+
+#Navbar {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  width: stretch;
+}
+
+#Navbar li,
+#Navbar a,
+#Navbar h4 {
+  width: min-content;
+  height: min-content;
+}
+
+#Navbar ul {
+  /*border: 2px solid black;*/
+  border-radius: 15px;
+  /*box-shadow: inset 0 0 10px black;*/
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+
+  min-width: 400px;
+  width: 50vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#Navbar li {
+  display: inline-block;
+  height: fit-content;
+  border-radius: 20px;
+  transition: all 0.5s ease 0s;
+}
+
+#Navbar li:hover {
+  background-color: azure;
+}
+
+#Navbar li:hover a {
+  color: lightskyblue;
+}
+
+#Navbar a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+}
+
+#Navbar h4 {
+  padding: 8px;
+  border-radius: 10px;
+  font-size: fit-content;
+}
